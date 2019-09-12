@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+        <html>
+            <head>
+                <title>Residenza</title>
+                <script type="text/javascript" src="jquery.js"> </script>
+                <script src="style2.js"></script>
+                 
+                 <link rel="stylesheet" href="style.css">
+                  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+            </head>
+            <body class="body">
+             <center><h1>Residenza</h1><br></center>
+             <form id="reseForm">
+                 <center>Nome<br> <center></center><input type="text" id="nome"></center><br>
+                 <center>Cognome<br> <center></center><input type="text" id="cognome"></center><br>
+                 <center>Data di Nascita<br> <center></center><input type="text" id="data"></center><br>
+                 <center>Città<br> <center></center><input type="text" id="citta"></center><br>
+                 <center>Cap<br> <center></center><input type="text" id="cap"></center><br> 
+                 <center>Foto<br> <center></center><p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                 <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+                 <p><img id="output" width="200" /></p>
+                 </center>      
+            </form><br><br>
+            <center><button class="btn btn-primary" id="button">Aggiungi</button></center><br><br>
+           <div class="inner">
+               <ul id="resiList">
+                </ul> 
+            </div>    
+        </body>
+         </html>

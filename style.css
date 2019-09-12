@@ -1,0 +1,112 @@
+
+  body {
+    background-image: url(oke.png); 
+  }
+  body {
+    margin:0;
+    padding:0;
+    background-color:#333;
+    font-family:verdana;
+    color: white
+  }
+  p{
+      color:white
+  }
+  form{
+    width: 100%;
+    box-sizing: border-box;
+      color:white
+  }
+  h1{
+      color:white
+  }
+ span{
+     position: relative;
+ }
+ @media only screen and (min-width: 620px) {
+  .active img.foto{
+    position: absolute;
+    right: 120px;
+   top:865px;
+   overflow: hidden;
+  }
+
+ .accordion {
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: white;
+}
+
+.accordion .panel{
+  transition: height 3s ease-out;
+  opacity: 1; 
+ 
+
+}
+.active.accordion .panel{
+  display:flex;
+  opacity: 1;
+  height: 150px;
+  
+}
+
+.panel {
+  /*padding: 0 18px;*/
+  background-color: white;
+  overflow: hidden;
+  height: 0;
+}
+}
+ li.lista {
+  font-size: 16px;
+  font-family: monospace;
+ }
+
+@media only screen and (max-width: 620px) {
+  .active img.foto{
+    position: absolute;
+    top: 960px;
+  }
+    .accordion {
+      background-color: #eee;
+      color: black;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+    }
+    
+    .active, .accordion:hover {
+      background-color: white;
+    }
+  
+    .accordion .panel{
+      transition: height 3s ease-out;
+      opacity: 1; 
+     
+  
+    }
+    .active.accordion .panel{
+      display:flex;
+      opacity: 1;
+      height: 200px;
+    }
+    
+    .panel {
+      /*padding: 0 18px;*/
+      background-color: white;
+      overflow: hidden;
+      height: 0;
+    }
+  }
